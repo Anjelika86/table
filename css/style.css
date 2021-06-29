@@ -2,69 +2,76 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+td {
+  border: 1px solid;
+  border: none;
+  vertical-align: middle;
+  padding: 10px 20px;
   text-align: center;
-}
-
-thead >tr:first-child > td:first-child {
-  background-color: rgb(120,135,171);
-  padding: 100px 10px;
-}
-thead>tr:first-child > td:nth-child(2) {
-  background-color: rgb(79,98,142);
-}
-thead>tr:first-child > td:nth-child(3) {
-  background-color: rgb(46,65,114);
-}
-thead>tr:first-child > td:nth-child(4) {
-  background-color: rgb(22,41,85);
-}
-thead>tr:first-child > td:nth-child(5) {
-  background-color: rgb(6,21,57);
+  font-family: sans-serif;
+  
 }
 thead {
   color: white;
   font-weight: bold;
   
 }
-
-tbody >tr:first-child >td:nth-child(odd) {
-  background-color: rgb(219,219,219);
-}
-tbody >tr:first-child >td:nth-child(even) {
-  background-color: rgb(231,231,231);
-}
-tbody >tr:nth-child(odd) >td:nth-child(odd) {
-  background-color: rgb(219,219,219);
-}
-tbody >tr:nth-child(odd) >td:nth-child(even) {
-  background-color: rgb(231,231,231);
-}
-tbody >tr:nth-child(even) >td:nth-child(even) {
-  background-color: rgb(243,243,243);
-}
-tbody >tr:nth-child(even) >td:nth-child(odd) {
-  background-color: rgb(236,236,236);
-}
- tfoot>tr:first-child > td:first-child {
-  background-color: rgb(219,219,219);
+thead td:first-child {
+  background: #7887AB;
+  border-top-left-radius: 10px;
 }
 
-
-tfoot >tr:nth-child(odd) >td:nth-child(odd) {
-  background-color: rgb(219,219,219);
+thead td:nth-child(2) {
+  background: #4F628E;
 }
-tfoot >tr:nth-child(odd) >td:nth-child(even) {
-  background-color: rgb(231,231,231);
+thead td:nth-child(3) {
+  background: #2E4172;
+}
+thead td:nth-child(4) {
+  background: #162955;
+}
+thead td:nth-child(5) {
+  background: #061539;
+  border-top-right-radius: 10px;
+}
+p {
+  margin: 20px 0 10px 0;
+  font-size: 40px;
+}
+tbody td:first-child {
+  text-align: left;
 }
 
-
-
-tr, td {
-  padding: 30px;
-
+tbody > tr:nth-child(odd) > td:nth-child(odd) {
+  background: #DBDBDB;
 }
+tbody > tr:nth-child(even) > td:nth-child(odd) {
+  background: #ECECEC;
+}
+tbody > tr:nth-child(odd) > td:nth-child(even) {
+  background: #E7E7E7;
+}
+tbody > tr:nth-child(even) > td:nth-child(even) {
+  background: #F3F3F3;
+}
+
+tfoot td:nth-child(odd) {
+  background: #DBDBDB;
+}
+tfoot td:nth-child(even) {
+  background: #E7E7E7;
+}
+
 button {
   padding: 10px 20px;
-  background-color: rgb(211,211,211);
+  background-color: #D3D3D3;
 }
-
+tfoot td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tfoot td:last-child {
+  border-bottom-right-radius: 10px;
+}
+ 
